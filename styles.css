@@ -112,14 +112,67 @@ nav ul li a:hover {
     text-align: left;
 }
 
+/* 
+ */
 .screenshots {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 10px;
+    gap: 20px; /* Images ke beech gap */
 }
 
-.screenshots img {
-    width: 200px;
+.screenshot-item {
+    text-align: center;
+    border: 1px solid #ddd; /* Light grey border */
     border-radius: 8px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    width: 220px; /* Fixed width for uniform look */
+}
+
+.screenshot-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    transition: transform 0.3s ease;
+}
+
+.screenshot-item img:hover {
+    transform: scale(1.05);
+}
+
+.screenshot-item span {
+    display: block;
+    font-size: 14px;
+    color: #555;
+    font-weight: 500;
+}
+
+.footer {
+    background-color: #007BFF; /* Blue */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+.footer-social {
+    margin-bottom: 10px;
+}
+
+.footer-social a {
+    color: white;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: #FFD700; /* Gold hover effect */
+}
+
+.footer p {
+    font-size: 14px;
+    margin: 0;
 }
