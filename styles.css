@@ -114,40 +114,71 @@ nav ul li a:hover {
 
 /* 
  */
-.screenshots {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px; /* Images ke beech gap */
+
+
+ 
+.project-card {
+  background: #1c1f26;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  max-width: 360px;   /* compact card */
+  margin: 20px auto;
+  padding: 14px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.screenshot-item {
-    text-align: center;
-    border: 1px solid #ddd; /* Light grey border */
-    border-radius: 8px;
-    padding: 10px;
-    background-color: #fff;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    width: 220px; /* Fixed width for uniform look */
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.4);
 }
 
-.screenshot-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 6px;
-    margin-bottom: 8px;
-    transition: transform 0.3s ease;
+.project-content h3 {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 8px;
 }
 
-.screenshot-item img:hover {
-    transform: scale(1.05);
+.project-content p {
+  color: #bbb;
+  font-size: 13px;
+  margin-bottom: 14px;
+  line-height: 1.4;
 }
 
-.screenshot-item span {
-    display: block;
-    font-size: 14px;
-    color: #555;
-    font-weight: 500;
+/* Screenshot Grid */
+.screenshot-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);  /* 2x2 grid */
+  gap: 6px;
+  margin-bottom: 14px;
 }
+
+.screenshot-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  object-fit: cover;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+/* Button */
+.project-content .btn {
+  display: inline-block;
+  padding: 8px 14px;
+  background: #007bff;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 6px;
+  font-size: 13px;
+  text-decoration: none;
+  transition:   0.3s ease;
+}
+
+.project-content .btn:hover {
+  background: #0056b3;
+}
+
 
 .footer {
     background-color: #003366; /* Blue */
