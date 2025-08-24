@@ -97,79 +97,97 @@ nav ul li a:hover {
     gap: 8px;
 }
 
-/* Portfolio Section */
+ /* Section */
 .portfolio-section {
-  padding: 60px 20px;
-  background: #f9f9f9;
+  padding: 40px 20px;
   text-align: center;
 }
 
-.portfolio-section .section-title {
-  font-size: 2rem;
-  margin-bottom: 10px;
-  color: #333;
+.section-title {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  color: #222;
 }
 
-.portfolio-section .section-subtitle {
-  font-size: 1rem;
-  margin-bottom: 40px;
-  color: #666;
-}
-
-/* Project Card */
-.project-card {
-  max-width: 350px;
+/* Single Project Card */
+.single-project-card {
+  width: 280px;
   margin: 0 auto;
-  background: #fff;
+  border: 1px solid #ddd;
   border-radius: 16px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
   overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  background: #fff;
+  text-align: center;
   transition: transform 0.3s;
 }
 
-.project-card:hover {
-  transform: translateY(-6px);
+.single-project-card:hover {
+  transform: translateY(-5px);
 }
 
-/* Preview Image */
-.project-preview img {
-  width: 100%;
-  height: auto;
-  display: block;
+/* Image */
+.project-image {
+  padding: 15px;
 }
 
-/* Project Details */
-.project-details {
-  padding: 20px;
+.project-image img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid #ccc;
 }
 
-.project-details h3 {
-  font-size: 1.5rem;
-  color: #222;
-  margin-bottom: 10px;
+/* Bottom Blue Bar */
+.project-bottom {
+  background: #007bff; /* Blue bar */
+  color: #fff;
+  padding: 15px;
 }
 
-.project-details p {
-  font-size: 0.95rem;
-  color: #555;
-  margin-bottom: 20px;
-  line-height: 1.5;
+.project-bottom h3 {
+  margin: 0 0 8px;
+  font-size: 1.1rem;
+}
+
+.project-bottom p {
+  font-size: 0.85rem;
+  line-height: 1.4;
+  margin-bottom: 15px;
 }
 
 /* Button */
 .btn {
   display: inline-block;
-  padding: 10px 20px;
-  background: #6c63ff; /* same color theme */
-  color: #fff;
-  text-decoration: none;
-  border-radius: 8px;
+  padding: 8px 16px;
+  background: #fff;
+  color: #007bff;
   font-weight: bold;
-  transition:  0.3s;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: 0.3s;
 }
 
 .btn:hover {
-  background: #5548d9;
+  background: #e6e6e6;
+}
+
+
+/* Footer Bar */
+.project-footer {
+  background: #007bff; /* Blue footer */
+  padding: 10px;
+  border-radius: 0 0 12px 12px;
+  text-align: center;
+}
+
+.project-footer .btn {
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
 }
 
 
